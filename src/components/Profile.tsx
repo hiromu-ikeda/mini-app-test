@@ -13,5 +13,10 @@ export const Profile = () => {
       setName(profile?.name);
     })();
   }, []);
-  return <div>名前 : {name}</div>;
+  return (
+    <div>
+      <button onClick={() => liff?.login()}>ログイン</button>
+      <p>名前 : {name}</p>
+    </div>
+  );
 };
