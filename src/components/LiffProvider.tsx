@@ -7,7 +7,7 @@ interface Props {
   children: ReactNode;
 }
 
-const LiffContext = createContext<Liff | null>(null);
+export const LiffContext = createContext<Liff | null>(null);
 
 export const LiffProvider = ({ children }: Props) => {
   const [liffObject, setLiffObject] = useState<Liff | null>(null);
