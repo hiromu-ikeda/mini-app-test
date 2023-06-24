@@ -9,8 +9,8 @@ export const Profile = () => {
 
   useEffect(() => {
     (async () => {
-      const profile = await liff?.getProfile();
-      setName(profile?.displayName);
+      const profile = await liff?.getDecodedIDToken();
+      setName(profile?.name);
     })();
   }, []);
   return <div>名前 : {name}</div>;
