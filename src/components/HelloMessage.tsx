@@ -18,7 +18,7 @@ export const HelloMessage = () => {
   if (!profile) return <FallbackHelloMessage />
 
   return (
-    <div>
+    <div className="p-2">
       <p>ようこそ、{profile.name}さん</p>
     </div>
   )
