@@ -19,7 +19,7 @@ export const HelloMessage = () => {
 
   return (
     <div className="p-2">
-      <p>ようこそ、{profile.name}さん</p>
+      <p className="font-bold">ようこそ、{profile.name}さん</p>
     </div>
   )
 }
