@@ -1,9 +1,9 @@
-import { Header } from "@/components/Header";
-import { Navigation } from "@/components/Navigation";
-import { ReactNode } from "react";
+import { Header } from "@/components/Header"
+import { Navigation } from "@/components/Navigation"
+import { ReactNode } from "react"
 
 interface Props {
-  children: ReactNode;
+  children: ReactNode
 }
 
 const AuthenticatedLayout = ({ children }: Props) => {
@@ -13,7 +13,7 @@ const AuthenticatedLayout = ({ children }: Props) => {
       <Navigation />
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default AuthenticatedLayout;
+export default AuthenticatedLayout
