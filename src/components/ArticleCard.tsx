@@ -7,8 +7,8 @@ export const ArticleCard = ({ title, eyecatchUrl, publishedAt }: Article) => {
       <Image
         src={eyecatchUrl ? eyecatchUrl : "/eyecatch.png"}
         alt="アイキャッチ"
-        width={360}
-        height={160}
+        width={720}
+        height={320}
       />
       <div className="p-2">
         <p>{title}</p>
