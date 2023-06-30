@@ -1,4 +1,4 @@
-import { ArticleFeed } from "@/components/ArticleFeed"
+import { ColumnFeed } from "@/components/ColumnFeed"
 import { HelloMessage } from "@/components/HelloMessage"
 import { Section } from "@/components/Section"
 
@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <HelloMessage />
       <Section title="本日のおすすめ記事" />
-      <ArticleFeed amount={1} />
+      <ColumnFeed amount={1} />
     </main>
   )
 }

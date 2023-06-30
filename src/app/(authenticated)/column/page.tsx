@@ -1,9 +1,9 @@
-import { ArticleFeed } from "@/components/ArticleFeed"
+import { ColumnFeed } from "@/components/ColumnFeed"
 
 export default function Column() {
   return (
     <div>
-      <ArticleFeed amount={5} />
+      <ColumnFeed amount={5} />
     </div>
   )
 }

@@ -1,9 +1,10 @@
-import { Article } from "@/types/article"
+import { Column } from "@/types/column"
 import Image from "next/image"
+import Link from "next/link"
 
-export const ArticleCard = ({ title, eyecatchUrl, publishedAt }: Article) => {
+export const ColumnCard = ({ id, title, eyecatchUrl, publishedAt }: Column) => {
   return (
-    <div className="border border-gray-300 rounded">
+    <Link href={`/column/${id}`} className="border border-gray-300 rounded">
       <Image
         src={eyecatchUrl ? eyecatchUrl : "/eyecatch.png"}
         alt="アイキャッチ"
@@ -14,6 +15,6 @@ export const ArticleCard = ({ title, eyecatchUrl, publishedAt }: Article) => {
         <p>{title}</p>
         <p className="text-[10px]">{publishedAt}</p>
       </div>
-    </div>
+    </Link>
   )
 }
