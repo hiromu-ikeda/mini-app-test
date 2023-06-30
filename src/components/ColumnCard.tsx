@@ -6,7 +6,7 @@ export const ColumnCard = ({ id, title, eyecatchUrl, publishedAt }: Column) => {
   return (
     <Link href={`/column/${id}`} className="border border-gray-300 rounded">
       <Image
-        src={eyecatchUrl ? eyecatchUrl : "/eyecatch.png"}
+        src={eyecatchUrl ? eyecatchUrl : "/column-eyecatch.png"}
         alt="アイキャッチ"
         width={720}
         height={320}
