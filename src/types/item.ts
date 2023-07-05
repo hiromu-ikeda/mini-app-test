@@ -9,10 +9,10 @@ export interface Item {
 export const items: Item[] = [
   {
     id: 1,
-    title: "商品名",
-    description:
-      "ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。",
+    title: "三ツ矢サイダー",
+    description: "三ツ矢サイダー5本セットです。",
     price: 550,
+    eyecatchUrl: "/item-1.png",
   },
   {
     id: 2,

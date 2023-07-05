@@ -6,7 +6,7 @@ import { LiffContext } from "./LiffProvider"
 const FallbackHelloMessage = () => {
   return (
     <div className="p-2">
-      <div className="h-8 w-[148px] bg-gray-200" />
+      <div className="h-8 w-[148px] bg-gray-200 rounded-[8px]" />
     </div>
   )
 }

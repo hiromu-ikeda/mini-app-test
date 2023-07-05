@@ -12,13 +12,12 @@ export const ItemCard = ({ item }: Props) => {
       className="border border-gray-300 rounded-[8px]"
       href={`/shopping/${item.id}`}
     >
-      <div className="w-[240px] h-[240px]">
+      <div className="w-[240px] h-[240px] relative">
         <Image
           src={item.eyecatchUrl ? item.eyecatchUrl : "/item-eyecatch.png"}
-          width={720}
-          height={720}
+          fill
           alt="アイキャッチ"
-          className="rounded-t-[8px]"
+          className="object-cover rounded-t-[8px]"
         />
       </div>
       <div className="p-2">
